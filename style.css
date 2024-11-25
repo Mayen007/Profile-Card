@@ -1,0 +1,171 @@
+:root {
+  /* Primary Colors */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* Neutral Colors */
+  --dark-gray: hsl(0, 0%, 59%);
+
+  /* Font Sizes */
+  --name-font-size: 18px;
+}
+
+@font-face {
+  font-family: 'KumbhSans-Regular';
+  src: url(./assets/fonts/static/KumbhSans-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KumbhSans-Bold';
+  src: url(./assets/fonts/static/KumbhSans-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'KumbhSans-Regular', sans-serif;
+  background:
+    url(./assets/images/bg-pattern-top.svg) no-repeat left top,
+    url(./assets/images/bg-pattern-bottom.svg) no-repeat right bottom,
+    var(--dark-cyan);
+  background-position: left 10% top 10%, right 10% bottom 10%;
+  background-size: 50%, 50%;
+  height: 100vh;
+}
+
+/* Card container styling */
+.card-container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  max-width: 90%;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.5);
+  padding-bottom: 2rem;
+}
+
+/* Header image styling */
+.card-img-header {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Avatar image styling */
+.avatar-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid hsl(0, 0%, 100%);
+}
+
+/* Avatar information section */
+.avatar-info {
+  clear: both;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 2.2rem;
+  margin-top: 1.9rem;
+}
+
+/* Avatar bio section */
+.avatar-bio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Avatar name styling */
+.avatar-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--very-dark-desaturated-blue);
+  font-family: 'KumbhSans-Bold', sans-serif;
+}
+
+/* Avatar age styling */
+.avatar-age {
+  font-size: 1.2rem;
+  color: var(--dark-grayish-blue);
+}
+
+/* Avatar location styling */
+.avatar-location {
+  font-size: 1.2rem;
+  color: var(--dark-grayish-blue);
+}
+
+/* Divider line styling */
+.line {
+  width: 100%;
+  border: 1px solid var(--dark-gray);
+  opacity: 0.3;
+}
+
+/* Avatar stats section */
+.avatar-stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.3rem;
+}
+
+/* Individual stat styling */
+.avatar-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Stat number styling */
+.stat-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--very-dark-desaturated-blue);
+  font-family: 'KumbhSans-Bold', sans-serif;
+}
+
+/* Stat title styling */
+.stat-title {
+  font-family: 'KumbhSans-Regular', sans-serif;
+  font-size: 1rem;
+  color: var(--dark-grayish-blue);
+  letter-spacing: 1px;
+}
+
+/* Attribution section styling */
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+/* Attribution link styling */
+.attribution a {
+  color: hsl(0, 0%, 100%);
+}
